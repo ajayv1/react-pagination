@@ -1,0 +1,50 @@
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px;
+  padding: 0;
+  gap: 20px;
+}
+
+.product__card {
+  height: 150px;
+  padding: 20px;
+  border-radius: 3px;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.product__card > img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.product__card > h2 {
+  font-size: 14px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 15px 0;
+}
+
+.pagination > span {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0;
+}
+
+span.selected {
+  background-color: #bbb;
+}
